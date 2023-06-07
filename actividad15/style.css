@@ -1,0 +1,123 @@
+:root {
+            --body-background: rgb(113, 211, 178);
+            --header-background: rgb(37, 35, 35);
+            --header-text-color: rgb(187, 218, 207);
+            --header-title-family: Arial, Helvetica, sans-serif;
+            --header-title-size: 8rem;
+            --header--text-size: 4rem;
+            --container-color: rgb(202, 238, 238);
+            --main-background: rgb(0, 188, 235);
+            --general-title-size: 4rem;
+            --main-text-size: 2rem;
+            --aside-background: rgb(212, 8, 134);
+            --footer-background: rgb(255, 242, 66);
+            --general-text-color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 62.5%;
+        }
+
+        body {
+            display: grid;
+            grid-template-areas: "header" "cent" "footer";
+            grid-template-columns: 1fr;
+            grid-template-rows: auto 3fr 1fr;
+            background-color: var(--body-background);
+        }
+
+        header {
+            grid-area: header;
+            background-color: rgb(37, 35, 35);
+            color: var(--header-text-color);
+            margin: 0 20px 20px 0;
+        }
+
+        header h1 {
+            font-size: var(--header-title-size);
+            text-align: center;
+            margin: 40px 0 40px;
+        }
+
+        header nav {
+            background-color: var(--container-color);
+            margin: 0 20px 20px 0;
+        }
+
+        header ul {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-between;
+            padding: 40px 120px;
+            list-style: none;
+        }
+
+        header ul li {
+            color: var(--general-text-color);
+            font-size: var(--header--text-size);
+        }
+
+        a{
+            text-decoration:none;
+        }
+
+        body div {
+            display: grid;
+            grid-template-areas: "main aside";
+            grid-template-columns: 3.25fr .75fr;
+            grid-template-rows: 1fr;
+            background-color: var(--container-color);
+            grid-area: cent;
+            margin: 0 20px 20px 0;
+        }
+
+        main {
+            grid-area: main;
+            background-color: var(--main-background);
+            color: var(--general-text-color);
+            height: 45vh;
+            margin: 20px 20px 20px 0;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: var(--general-title-size);
+            margin: 60px 0 70px 0;
+        }
+
+        body p { 
+            font-size: var(--main-text-size);
+            margin: 35px 0;
+        }
+
+        aside {
+            grid-area: aside;
+            background-color: var(--aside-background);
+            margin: 20px 20px 20px 0;
+            text-align: center;
+        }
+
+        input, span {
+            font-size: var(--main-text-size);
+        }
+
+        span {
+            margin: 0 5px;
+        }
+
+        form input:last-child {
+            margin: 18px 0;
+        }
+
+        footer {
+            display: flex;
+            grid-area: footer;
+            background-color: var(--footer-background);
+            margin: 0 20px 40px 0;
+            justify-content: center;
+            align-items: center;
+        }

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Esta es una página de ejemplo sobre el uso de los elementos HTML legados y de los elementos HTML5">
+    <meta name="keyword" content="Práctica HTML5, HTML, estructura básica, HTML5">
+    <meta name="author" content="Brandon León González">
+</head>
+<body>
+    <header class="encabezado" id="encabezado">
+        <h1>Encabezado principal p&aacute;gina 2</h1>
+    </header>   
+    <nav class="navegacion" id="navegacion">
+        <h2>Navegaci&oacute;n con lista </h2>
+        
+        <ol>
+            <li><a href="/index.html" target="_blank">Hiperv&iacute;nculo a la p&aacute;gina 1 que se cargar&aacute; en una nueva pesta&ntilde;a</a></li>
+
+            <li><a href="/pagina3.html" target="_blank">Hiperv&iacute;nculo a la p&aacute;gina 3 que se cargar&aacute; en una nueva pesta&ntilde;a</a></li>
+        </ol>
+    </nav>
+    <main class="contenido" id="contenido">
+        <section class="seccion" id="seccion">
+            <article class="articulo" id="articulo">
+                <h2>Encabezado de secci&oacute;n</h2>
+
+                <p>Esto es un p&aacute;rrafo de la segunda p&aacute;gina.</p>
+
+                <p>Esto es el segundo p&aacute;rrafo de la segunda p&aacute;gina.</p>
+            </article>
+
+            <article class="articulo0" id="articulo2">
+                <figure>
+                    <img src="https://i.pinimg.com/originals/0a/d6/37/0ad6374865831e13b862cafcbffabfad.jpg" alt="Un michi deber&iacute;a estar aqu&iacute;...">
+
+                    <figcaption>Leyenda de la segunda im&aacute;gen</figcaption>
+                </figure>
+            </article>
+
+            <article class="articulo" id="articulo3">
+                <table border="2">
+                    <caption>
+                        <h1><i>Tabla</i></h1>
+                    </caption>
+
+                    <tr>
+                        <th colspan="4">GB 18030</th>
+
+                        <th rowspan="2">code points</th>
+
+                        <th rowspan="2">unicode</th>
+                    </tr>
+
+                    <tr>
+                        <th> byte 1(MB) </th>
+
+                        <th> byte 2 </th>
+
+                        <th> byte 3 </th>
+
+                        <th> byte 4 </th>
+                    </tr>
+
+                    <tr>
+                        <td> 00-7f </td>
+
+                        <td colspan="3"> </td>
+
+                        <td>128 </td>
+
+                        <td> 0000-007f </td>
+                    </tr>
+
+                    <tr>
+                        <td> 80 </td>
+
+                        <td colspan="3"> </td>
+
+                        <td> </td>
+
+                        <td> invalid </td>
+                    </tr>
+
+                    <tr>
+                        <td> 81-fe </td>
+
+                        <td> 40-fe escept 7f </td>
+
+                        <td colspan="2"> </td>
+
+                        <td>23 940 </td>
+
+                        <td rowspan="2"> 0080 - ffff escept d800-dfff</td>
+                    </tr>
+
+                    <tr>
+                        <td> 81-84 </td>
+
+                        <td rowspan="3"> 30-39 </td>
+
+                        <td rowspan="3"> 81-fe </td>
+
+                        <td rowspan="3"> 30-39 </td>
+
+                        <td>39 420 </td>
+                    </tr>
+
+                    <tr>
+                        <td> 85 </td>
+
+                        <td> (12 600)</td>
+
+                        <td> reserved for future character extension </td>
+                    </tr>
+
+                    <tr>
+                        <td>86-8f </td>
+
+                        <td> (12 600) </td>
+
+                        <td> reserved for future character extension </td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </main>
+    <hr>
+    <footer class="pie_de-pagina" id="pie_de-pagina">
+        <h3>Pie de p&aacute;gina</h3>
+        &copy; Derechos reservados 2023.
+    </footer>
+</body>
+</html>

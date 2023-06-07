@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Ejemplo del elemento tabla en HTML">
+    <meta name="keyword" content="html, pilares, edc, tablas">
+    <meta name="author" content="Brandon León González">
+</head>
+<body>
+    <div id="header">
+        <h1>Tablas en HTML</h1>
+    </div>
+
+    <div id="main">
+        <div>
+            <!-- Sirve para definir una tabla -->
+            <table border="3">
+                <!-- Define un título arriba de la tabla -->
+                <caption>Tabla de ejemplo</caption>
+                <!-- Sirve para definir una fila dentro de la tabla -->
+                <tr>
+                    <!-- Sirve para definir un título dentro de la tabla -->
+                    <th>A</th>
+                    <th>B</th>
+                    <th>C</th>
+                    <th>D</th>
+                </tr>
+
+                <tr>
+                    <!-- Sirve para definir un dato dentro de la tabla -->
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                </tr>
+
+                <tr>
+                    <!-- rowspan sirve para unir un número definido de filas para un dato -->
+                    <td rowspan="3">5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+
+                <tr>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <!-- colspan sirver para unir un número definido de columnas para un dato -->
+                    <td colspan="2">17</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>&copy; Todos los derechos reservados 2023.</p>
+    </div>
+</body>
+</html>

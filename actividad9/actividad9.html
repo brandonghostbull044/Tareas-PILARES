@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Ejemplo del elemento tabla en HTML">
+    <meta name="keyword" content="html, pilares, edc, tablas">
+    <meta name="author" content="Brandon León González">
+</head>
+<body>
+    <div id="header">
+        <h1>Formato de Registro</h1>
+    </div>
+
+    <div id="main">
+        <form action="#" method="post">
+            <!-- Nombre -->
+            <!-- La etiqueta fieldset agrupa un conjunto de inputs para un formulario y los encierra en un marco -->
+            <fieldset>
+                <!-- Le da un título al la agrupación -->
+                <legend>Información personal del usuario</legend>
+
+                <p>
+                    <!-- Sirve para definir un área activa donde el usuario puede dar click y llecar a un input -->
+                    <label for="nombre">Nombre Completo</label>
+                </p>
+                <input type="text" id="nombre">
+
+
+                <!-- Email -->
+                <p>
+                    <label for="email">Email</label>
+                </p>
+                <input type="text" id="email">
+
+
+                <!-- Contraseña -->
+                <p>
+                    <label for="pass">Contraseña</label>
+                </p>
+                <input type="password" id="pass" name="pass">
+
+                <p>
+                    <label for="passw">Confirmar tu contraseña</label>
+                </p>
+                <input type="password" id="passw" name="pass">
+
+
+                <!-- Genero -->
+                <p>
+                    <label for="genre">Genero</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="genre" name="genero" value="f">F
+                </p>
+
+                <p>
+                    <input type="radio" id="genres" name="genero" value="m">M
+                </p>
+                <p>
+                    <input type="radio" id="genres2" name="genero" value="o">O
+                </p>
+
+
+                <!-- Descripción de motivaciones -->
+                <p>
+                    <label for="direccion">Introduce una breve descripci&oacute;n de tus motivaciones para tomar el presente curso:</label>
+                </p>
+                <!-- Sirve para dar un espacio donde el usuario puede ingresar un texto extenso -->
+                <textarea cols="65" rows="10">Ingresa aquí</textarea>
+
+
+                <!-- Pasatiempos -->
+                <p>Pasatiempo:</p>
+
+                <p>
+                    <input type="checkbox" id="sing" value="sing"><label for="sing">Cantar</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="foot" value="foot"><label for="foot">Futbol</label>
+                </p>
+
+                <p>
+                    <input type="checkbox" id="red" value="read"><label for="read">Leer</label>
+                </p>
+
+
+                <!-- Información -->
+                <label for="info">¿Cómo te enteraste del taller?</label>
+                <p>
+                    <!-- Sirve una lista desplegable -->
+                    <select name="comunicacion" id="info">
+                        <!-- Agrupa una serie de opciones dentro de la lista desplegable, y da un título a la agrupación -->
+                        <optgroup label="Redes Sociales">
+                            <!-- Define una opción dentro de un grupo de opciones -->
+                            <option value="fb">Facebook</option>
+                            <option value="ig">Instagram</option>
+                        </optgroup>
+
+                        <optgroup label="Directo en el PILARES">
+                            <option value="informes">Pediste informes</option>
+                            <option value="promocional">Viste promocional pagado</option>
+                        </optgroup>
+                    </select>
+                </p>
+
+                <p><input type="submit" value="Registro"></p>
+            </fieldset>
+        </form>
+    </div>
+</body>
+<div>
+    <p>&copy; Todos los derechos reservados 2023</p>
+</div>
+</html>

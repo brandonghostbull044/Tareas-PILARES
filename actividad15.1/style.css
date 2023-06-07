@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 20%;
+}
+
+header nav {
+    background-color: yellow;
+    width: 100%;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-around;
+    margin-left: calc(100% - 350px);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+main article:first-child {
+    background-color: green;
+}
+
+main article:first-child p:nth-child(5) {
+    word-spacing: 2.5em;
+}
+
+main article:first-child p:last-child {
+    word-spacing: -0.5em;
+}
+
+main article:nth-child(2) {
+    color: white;
+    background-color: black;
+}
+
+main article:nth-child(2) p:nth-child(5) {
+    letter-spacing: 0.3125em;
+}
+
+main article:nth-child(2) p:last-child {
+    letter-spacing: -0.125em;
+}
+
+main article:nth-child(3) {
+    background-color: rgb(102, 7, 7);
+}
+
+main article:nth-child(3) p:nth-child(4) {
+    text-decoration: underline;
+}
+
+main article:nth-child(3) p:nth-child(5) {
+    text-decoration: overline red ;
+}
+
+main article:nth-child(3) p:nth-child(6) {
+    text-decoration: line-through blue double;
+}
+
+main article:nth-child(3) p:nth-child(7) {
+    text-decoration: overline underline purple dotted;
+}
+
+main article:nth-child(3) p:nth-child(8) {
+    text-decoration: underline yellow dashed 0.25em;
+}
+
+main article:nth-child(3) p:last-child {
+    text-decoration: line-through pink wavy 1%;
+}
+
+main article:nth-child(4) {
+    background-color: rgb(123, 177, 123);
+}
+
+main article:nth-child(4) p:nth-child(5) {
+    text-transform: uppercase;
+}
+
+main article:nth-child(4) p:nth-child(6) {
+    text-transform: lowercase;
+}
+
+main article:nth-child(4) p:last-child {
+    text-transform: capitalize;
+}
+
+main article:last-child {
+    background-color: pink;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(105, 199, 236);
+}
