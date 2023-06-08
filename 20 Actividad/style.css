@@ -38,6 +38,10 @@ header nav ul li {
     margin: 15px;
 }
 
+header nav ul li:hover {
+    cursor: pointer;
+}
+
 header button {
     position: absolute;
     display: flex;
@@ -50,12 +54,12 @@ header button {
     justify-content: center;
     font-weight: bold;
     margin: 20px;
-    
 }
 
 header button:nth-child(3) {
     background-color: white;
     right: 116px;
+    border: black solid 1px;
 }
 
 header button:nth-child(4) {
@@ -64,77 +68,137 @@ header button:nth-child(4) {
     right: 0;
 }
 
+header button:hover {
+    height: 3.1vh;
+    width: 98px;
+    cursor: pointer;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    right: 0;
+    top: 8vh;
+    font-size: 5rem;
+    text-align: center;
+    align-items: center;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+    font-size: 3rem;
+    width: 90%;
+    align-items: center;
+}
+
+.form-element  {
+    text-align: center;
+    margin-top: 5px;
+}
+
+aside form input:last-child {
+    border-radius: 50px;
+    margin-top: 30px;
+    width: 90%;
+}
+
+aside form input:last-child:hover {
+    cursor: pointer;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    height: 110vh;
+    height: 116vh;
+    text-align: center;
+}
+
+main article h2 {
+    font-size: 4.5rem;
+    line-height: 5rem;
+    height: min-content;
+    width: 100%;
+    text-transform: uppercase;
+    color: white;
+    top: 20px;
+}
+
+main article p {
+    width: 100%;
+}
+
+main p, main p a {
+    font-size: 2.5rem;
+    height: min-content;
+    width: max-content;
+    color: white;
 }
 
 main article {
     display: flex;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    text-justify: center;
-    margin: 20px;
-    border: black solid 3px;
-    justify-content: space-around;
+    margin: 15px 15px 0;
+    background-color: #016241;
     align-items: center;
+    justify-content: space-around;
 }
 
-main article h2 {
-    font-size: 6rem;
-    color: white;
-}
-
-main article p, main article p a {
-    font-size: 2.5rem;
-    color: white;
-}
-
-
-main article:first-child {
-    background-color: darkgreen;
-    grid-template-areas: "unodos";
-}
-
-main article:first-child h2 {
-    grid-area: unodos;
-}
-
-main article:nth-child(2), main article:last-child {
+main article:nth-child(2) {
     display: grid;
+    grid-template-areas: 'fig uno' 'fig dos' 'fig tres';
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "uno dos";
-    background-color: red;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #D40032;
 }
 
-main article:nth-child(2) figure, 
-main article:nth-child(3) figure {
-    width: 90%;
+main article:nth-child(3) {
+    display: grid;
+    grid-template-areas: 'uno fig' 'dos fig' 'tres fig';
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #D40032;
+}
+
+main article figure {
     height: 100%;
+    width: 90%;
+    grid-area: fig;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
 }
 
 main article:nth-child(2) figure {
     background-image: url(/Resourses/alebrije1.jpg);
 }
 
-main article:nth-child(3) figure {
+main article:last-child figure {
     background-image: url(/Resourses/alebrije2.jpg);
 }
 
-button {
-    width: 100px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50px;
+main article:nth-child(2) h2 {
+}
+
+main article button {
+    height: 50px;
+    width: 200px;
+    margin: auto;
+    background-color: #D40032;
     border: white 1px solid;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main article button:hover {
+    height: 53px;
+    width: 212px;
+    background-color: #cf224b;
 }
 
 .uno {
@@ -146,5 +210,26 @@ button {
 }
 
 footer {
-    height: 11vh;
+    margin: 30px 40px 0;
+    border-top: black solid 1px;
+    font-size: 1.5rem;
+}
+
+footer figure {
+    margin: 10px 0;
+}
+
+footer img {
+    height: 40px;
+    width: 40px;
+}
+
+footer img:hover {
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+}
+
+.inactive {
+    display: none;
 }

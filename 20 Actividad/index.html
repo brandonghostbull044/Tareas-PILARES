@@ -7,10 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body id="body">
     <header>
         <figure>
-            <img src="/Resourses/icons/" alt="Logo">
+            <img src="/Resourses/" alt="Logo">
         </figure>
 
         <nav>
@@ -21,9 +21,40 @@
             </ul>
         </nav>
         
-        <button><p>Iniciar sesi&oacute;n</p></button>
-        <button><p>Registrate</p></button>
+        <button id="login"><p>Iniciar sesi&oacute;n</p></button>
+        <button id="sing-up"><p>Registrate</p></button>
+
+        
     </header>
+
+    <aside class="inactive" id="sing-up-form">
+        <h3 class="form-element" >Crea una cuenta</h3>
+        <form action="">
+            <label class="form-element" for="email">Correo</label>
+            <input class="form-element"  id="email" type="email">
+
+            <label class="form-element"  for="pasword">Contraseña</label>
+            <input class="form-element"  id="pasword" type="password">
+
+            <label class="form-element" for="repasword">Repetir contraseña</label>
+            <input class="form-element"  id="repasword" type="password">
+
+            <input type="submit" name="Crear" value="Crear">
+        </form>
+    </aside>
+
+    <aside class="inactive" id="login-form">
+        <h3 class="form-element" >Iniciar sesión</h3>
+        <form action="">
+            <label class="form-element" for="email2">Correo</label>
+            <input class="form-element"  id="email2" type="email" placeholder="correo@correo.com">
+
+            <label class="form-element"  for="pasword2">Contraseña</label>
+            <input class="form-element"  id="pasword2" type="password" placeholder="************">
+
+            <input type="submit" name="Iniciar" value="Iniciar">
+        </form>
+    </aside>
 
     <main>
         <article>
@@ -33,34 +64,36 @@
         </article>
             
         <article>
-            <figure class="uno">
+            <figure>
             </figure>
 
-            <h2 class="dos">Alebrijes<br>mexicanos</h2>
-            <p class="dos">Tallados en madera cumplen con las m&aacute;s<br>altas exigencias en diseño.</p>
+            <h2>Alebrijes<br>mexicanos</h2>
 
-            <button class="dos"><p>Has tu pedido</p></button>
+            <p >Tallados en madera cumplen con las m&aacute;s<br>altas exigencias en diseño.</p>
+            
+            <button><p>Has tu pedido</p></button>
         </article>
 
         <article>
-            <h2 class="uno">Creatividad e<br>imaginaci&oacute;n</h2>
-            <p class="uno">Un sueño hecho realidad.</p>
+            <h2>Creatividad e<br>imaginaci&oacute;n</h2>
+            <p>Un sueño hecho realidad.</p>
+            <button><p>Has tu pedido</p></button>
 
-            <figure class="dos">
+            <figure>
             </figure>
         </article>
-
-        
     </main>
     
     <footer>
-        <img src="/Resourses/icons/icons8-facebook-30.png" alt="Facebook">
-        <img src="/Resourses/icons/icons8-pinterest-30.png" alt="Pinterest">
-        <img src="/Resourses/icons/icons8-instagram-30.png" alt="Instagram">
-        <img src="/Resourses/icons/icons8-youtube-play-30.png" alt="Youtube">
-        <img src="/Resourses/icons/icons8-twitter-30.png" alt="Twitter">
-
-        &copy; 2023 Todos los derechos reservados
+        <figure>
+            <img src="/Resourses/icons/icons8-facebook-30.png" alt="Facebook">
+            <img src="/Resourses/icons/icons8-pinterest-30.png" alt="Pinterest">
+            <img src="/Resourses/icons/icons8-instagram-30.png" alt="Instagram">
+            <img src="/Resourses/icons/icons8-youtube-play-30.png" alt="Youtube">
+            <img src="/Resourses/icons/icons8-twitter-30.png" alt="Twitter">
+        </figure>
+        &copy; 2023 Todos los derechos reservados al arte popular
     </footer>
+    <script src="/script.js"></script>
 </body>
 </html>
