@@ -20,8 +20,12 @@ header {
 }
 
 header figure {
-    height: 5vh;
-    width: 5vw;
+    height: 7vh;
+    width: 7vw;
+    background-image: url(/Resourses/1686366523163.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 header nav ul {
@@ -199,14 +203,6 @@ main article button:hover {
     height: 53px;
     width: 212px;
     background-color: #cf224b;
-}
-
-.uno {
-    grid-area: uno;
-}
-
-.dos {
-    grid-area: dos;
 }
 
 footer {

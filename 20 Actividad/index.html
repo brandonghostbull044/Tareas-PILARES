@@ -7,13 +7,41 @@
     <title>Document</title>
     <link rel="stylesheet" href="/style.css">
 </head>
-<body id="body">
+<aside class="inactive" id="sing-up-form">
+    <h3 class="form-element" >Crea una cuenta</h3>
+    <form action="">
+        <label class="form-element" for="email">Correo</label>
+        <input class="form-element"  id="email" type="email">
+
+        <label class="form-element"  for="pasword">Contraseña</label>
+        <input class="form-element"  id="pasword" type="password">
+
+        <label class="form-element" for="repasword">Repetir contraseña</label>
+        <input class="form-element"  id="repasword" type="password">
+
+        <input type="submit" name="Crear" value="Crear">
+    </form>
+</aside>
+
+<aside class="inactive" id="login-form">
+    <h3 class="form-element" >Iniciar sesión</h3>
+    <form action="">
+        <label class="form-element" for="email2">Correo</label>
+        <input class="form-element"  id="email2" type="email" placeholder="correo@correo.com">
+
+        <label class="form-element"  for="pasword2">Contraseña</label>
+        <input class="form-element"  id="pasword2" type="password" placeholder="************">
+
+        <input type="submit" name="Iniciar" value="Iniciar">
+    </form>
+</aside>
+<body>
     <header>
-        <figure>
-            <img src="/Resourses/" alt="Logo">
+        <figure class="removeForm">
+            <!-- <img src="/Resourses/1686366523163.png" alt="Logo"> -->
         </figure>
 
-        <nav>
+        <nav class="removeForm">
             <ul>
                 <li>Arte</li>
                 <li>Colecciones</li>
@@ -27,36 +55,9 @@
         
     </header>
 
-    <aside class="inactive" id="sing-up-form">
-        <h3 class="form-element" >Crea una cuenta</h3>
-        <form action="">
-            <label class="form-element" for="email">Correo</label>
-            <input class="form-element"  id="email" type="email">
+    
 
-            <label class="form-element"  for="pasword">Contraseña</label>
-            <input class="form-element"  id="pasword" type="password">
-
-            <label class="form-element" for="repasword">Repetir contraseña</label>
-            <input class="form-element"  id="repasword" type="password">
-
-            <input type="submit" name="Crear" value="Crear">
-        </form>
-    </aside>
-
-    <aside class="inactive" id="login-form">
-        <h3 class="form-element" >Iniciar sesión</h3>
-        <form action="">
-            <label class="form-element" for="email2">Correo</label>
-            <input class="form-element"  id="email2" type="email" placeholder="correo@correo.com">
-
-            <label class="form-element"  for="pasword2">Contraseña</label>
-            <input class="form-element"  id="pasword2" type="password" placeholder="************">
-
-            <input type="submit" name="Iniciar" value="Iniciar">
-        </form>
-    </aside>
-
-    <main>
+    <main class="removeForm">
         <article>
             <h2>Una experiencia<br>totalmente nueva<br>en el arte</h2>
 
@@ -84,7 +85,7 @@
         </article>
     </main>
     
-    <footer>
+    <footer class="removeForm">
         <figure>
             <img src="/Resourses/icons/icons8-facebook-30.png" alt="Facebook">
             <img src="/Resourses/icons/icons8-pinterest-30.png" alt="Pinterest">

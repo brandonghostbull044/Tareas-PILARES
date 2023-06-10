@@ -5,7 +5,6 @@ const login_form = document.querySelector('#login-form');
 login.addEventListener('click', toggleLogin)
 sing_up.addEventListener('click', toggleSingUp);
 
-
 function toggleLogin () {
     if (!sing_up_form.classList.contains('inactive')) {
         sing_up_form.classList.add('inactive');
