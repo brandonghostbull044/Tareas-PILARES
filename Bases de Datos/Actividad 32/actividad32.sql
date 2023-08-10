@@ -159,15 +159,8 @@ INSERT INTO registro_venta (id_venta, id_producto) VALUES
   (45, 12348), (46, 12349), (47, 12342), (48, 12344),
   (49, 12340), (50, 12345);
 
-SELECT * FROM t_clientes;
-SELECT nombre, apellido FROM t_proveedores;
-SELECT modelo, marca, precio FROM t_productos;
-SELECT nombre FROM t_sucursal;
-SELECT apellido, telefono, id_sucursal FROM t_vendedor;
-SELECT id_venta, fecha FROM t_ventas;
-SELECT count(*) FROM t_clientes;
-SELECT max(precio) FROM t_productos;
-SELECT min(precio) FROM t_productos;
-SELECT avg(edad) FROM t_clientes;
-SELECT sum(precio) FROM t_productos;
-SELECT count(*), avg(precio), sum(precio), min(precio), max(precio) FROM t_productos GROUP BY id_proveedor;
+SELECT * FROM t_productos;
+SELECT modelo, precio FROM t_productos;
+SELECT modelo FROM t_productos;
+SELECT COUNT(*) FROM t_productos;
+SELECT MAX(precio), MIN(precio), AVG(precio) FROM t_productos GROUP BY id_proveedor;
