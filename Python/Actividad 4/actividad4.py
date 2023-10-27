@@ -1,0 +1,6 @@
+print('Hola')
+print('Te ayudaré a calcular el perímetro de un triangulo.')
+entrada = print('Sólo debes ingresar los valores de base y altura del triángulo (separádos uno de otro con un espacio).')
+b = float(input('Ingresa el valor de la base: '))
+a = float(input('Ingresa el valor de la altura: '))
+print(f'El perímetro de tu triangulo es: {(b+a)*2}')
