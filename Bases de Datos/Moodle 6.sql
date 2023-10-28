@@ -1,16 +1,21 @@
+-- Bases de datos Fin de semana
+-- Practica 6
+-- Brandon Leon Gonzalez
+-- Folio: 337NRA92
+-- 14-08-23
+
 CREATE DATABASE IF NOT EXISTS ventas CHARACTER SET utf8mb4;
+
+CREATE TABLE IF NOT EXISTS producto(
+	  codigo INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+  	nombre VARCHAR(50) NOT NULL,
+  	precio DOUBLE,
+  	codigo_fabricante INT
+  );
 
 CREATE TABLE IF NOT EXISTS fabricante(
   	codigo INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
   	nombre VARCHAR(50)
-  );
-  
-CREATE TABLE IF NOT EXISTS producto(
-	codigo INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
-  	nombre VARCHAR(50) NOT NULL,
-  	precio DOUBLE,
-  	codigo_fabricante INT UNSIGNED NOT NULL,
-  	FOREIGN KEY (codigo_fabricante) REFERENCES fabricante(codigo)
   );
 
 INSERT INTO fabricante(codigo, nombre) VALUES (1, 'Asus'), (2, 'Lenovo'), (3, 'Hewlett-Packard'), (4, 'Samsung'), (5, 'Seagate'), (6, 'Crucial'), (7, 'Gigabyte'), (8, 'Huawei'), (9, 'Xioami');
